@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="indexmeadia.css">
-    <script src="index.js"></script>
     <title>Journey2gether</title>
 </head>
-<body>
+<body >
     <!-- navbar start -->
     <nav>
         <div class="topnavclosed" id="openTop">
@@ -36,9 +35,9 @@
         <div class="brandLogo"><a href="#" class="brandLogo"><b>Jorney2gether</b><br><small>travel fun,travel save</small></a></div>
         <div id="mobileNav" class="navigationcontainclose">
         <div class="navigation"><ul>
-            <li class="link "><a href="/index.html" class="link">Home</a></li>
-            <li class="link active"><a href="/Booktrip.html" >Book a Trip</a></li>
-            <li class="link"><a href="" >Records</a></li>
+            <li class="link "><a href="index.html" class="link">Home</a></li>
+            <li class="link active"><a href="Booktrip.html" >Book a Trip</a></li>
+            <li class="link"><a href="record.html" >Records</a></li>
             <li class="link"><a href="" >About</a></li>
            
         </div>
@@ -57,8 +56,93 @@
 <!-- boody -->
     <section class="body">
         <div>
-            <div></div>
+            <div class="avheader">
+                <h6>BOOK YOUR TRAVLE NOW</h6>
+                <h1>Plan your travle with cofidence</h1>
+                <small>Book now and enjoy a sreamless adventure travling together with other amazing travlers</small>
+            </div>
         </div>
+        <section class="classoftravle">
+            <div class="classbtn" >
+                <button class="contactbtn ex3" id="btn1" onclick="fnormal()">Normal class</button>
+                <button id="btn2" class="contactbtn ex3 classactive" onclick="fbuisness()">Business class</button>
+                <button id="btn3" onclick="fvip()" class="contactbtn ex3">VIP Reserve</button>
+            </div>
+            <div class="">
+                <div class="travleexplain ddnone" id="normal">
+                    <div><img src="asset/meeting_room_FILL0_wght400_GRAD0_opsz24.png" alt=""><div><h3>Meet Location</h3><br><small>J2G common wait section</small></div></div>
+                    <div><img src="asset/checked_bag_FILL0_wght400_GRAD0_opsz24.png"" alt=""><div><h3>Luggage</h3> <br><small>Max-load allowed is 50kg</small></div></div>
+                    <div><img src="asset/airport_shuttle_FILL0_wght400_GRAD0_opsz24.png" alt=""><div><h3>Travle Bus</h3><br><small>
+                        Normal Bus, 4 person in a row
+                    </small></div></div><div>
+                        <button class="contactbtn">Book Now <img src="asset/chevron_right_FILL0_wght400_GRAD0_opsz24.png" alt=""></button>
+                    </div>
+                </div> 
+                <div class="travleexplain " id="buisness">
+                    <div><img src="asset/meeting_room_FILL0_wght400_GRAD0_opsz24.png" alt=""><div><h3>Meet Location</h3><br><small>J2G dedicated section</small></div></div>
+                    <div><img src="asset/checked_bag_FILL0_wght400_GRAD0_opsz24.png" alt=""><div><h3>Luggage</h3> <br><small>Max-load allowed is 150kg</small></div></div>
+                    <div><img src="asset/airport_shuttle_FILL0_wght400_GRAD0_opsz24.png" alt=""><div><h3>Travle Bus</h3><br><small>
+                        Normal Bus, 3 persons in a row
+                    </small></div></div><div>
+                        <button class="contactbtn">Book Now <img src="asset/chevron_right_FILL0_wght400_GRAD0_opsz24.png" alt=""></button>
+                    </div>
+                </div> 
+                <div id="vip" class="travleexplain ddnone">
+                    <div><img src="asset/meeting_room_FILL0_wght400_GRAD0_opsz24.png" alt=""><div><h3>Meet Location</h3><br><small>J2G VIP</small></div></div>
+                    <div><img src="asset/checked_bag_FILL0_wght400_GRAD0_opsz24.png"" alt=""><div><h3>Luggage</h3> <br><small>Max-load allowed is 50kg</small></div></div>
+                    <div><img src="asset/airport_shuttle_FILL0_wght400_GRAD0_opsz24.png" alt=""><div><h3>Travle Bus</h3><br><small>
+                        Long Coster Bus with single sits
+                    </small></div></div>
+                    <div>
+                        <button class="contactbtn" >Book Now <img src="asset/chevron_right_FILL0_wght400_GRAD0_opsz24.png" alt=""></button>
+                    </div>
+                </div> 
+               
+            </div>
+            
+        </section>
+        <div class="bookingsection" id="book">
+            <h2>Get Your Travle Tickect</h2>
+            <div class="ticketsection">
+                <h5>from</h5>
+                <select name="" id="fromt" >
+                    <option value="">section a place</option>
+                </select> <h6>to</h6>
+                <select name="" id="tot" ">
+                    <option value="">Where to</option>
+                </select><h6> quantity and time</h6> <input id="tickamounts" type="number" class="tat" min="1" max="10"> 
+                <input class="tat" type="date" id="travledate" max="12/30/2030">
+
+                <div class="classoftravle tick" >
+                    <h5>Journey2gether</h5>
+                    <h6 class="mddt">You are buying a <select id="typetic">
+                        <option value="bis">Business</option>
+                         <option value="nor">Normal</option>
+                         <option value="vip">Vip</option>
+                        </select> ticket</h6>
+                    <h3>My Booked Ticket</h3>
+                    <div class="tickinfo">
+                        <div><h4>Journey from:</h4><small id="Journeyfrom">select</small></div>
+                        <div><h4>Journey to:</h4><small id="Journeyto">select</small></div><div><h4>Travle time:</h4><small id="traveltime">--/--/--</small></div>
+                        <div><h4>Booked on:</h4><small id="bookedon">--/--/--</small></div>
+                    </div>
+                    <div class="tickinfo">
+                        <div><h4>Distance of travle:</h4><small id="distance">select from and to</small></div>
+                        <div><h4>How many ticket:</h4><small id="nt">1</small></div>
+                        <div><h4>Cost nof travle (#):</h4><small id="costoftick">0</small></div>
+                        <div><h4>Tickect ref no:</h4><small id="trn">generate</small></div>
+                    </div>
+                    <div class="tickinfo">
+                        <div><i></i> <strong>Note that there will be a cancelation fee if youll be cancleing your travles. pls make sure before booking your ticket</strong></div>
+                        <div>
+                            <button id="buyt" disabled  class="contactbtn tritick" onclick="confirmtravle()">Get The Ticket</button>
+                        </div>
+                    </div>
+                    <h4 class="tickfooter">Thank you for Journeying with us</h4>
+                </div>
+            </div>
+        </div>
+        <div class="mth">My Travle History <a href="record.html" class="contactbtn">See My Journey</a></div>
     </section>
 
 
@@ -76,3 +160,4 @@
     
 </body>
 </html>
+<script src="index.js"></script>

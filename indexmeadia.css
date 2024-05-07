@@ -220,6 +220,12 @@
     .withIcon img:hover{
         border-bottom: solid thin black;
     }
+    div .travleexplain div{
+        margin-top: 0.5rem;
+    }
+    div .travleexplain div img{
+        width: 2.5rem;
+    }
     .navlink:hover{
         color: black;
         text-decoration: dotted ;
@@ -229,4 +235,380 @@
     .topnavclosed{
         display: none;
     }
+    .heroimage img{
+        height: auto;width: 100%;
+        border-radius: 0;
+    }
+    .classoftravle{
+        width: 95%;
+        padding: 1.5rem 0.5rem !important;
+    }
+    .classbtn{
+        width: 100%;
+    }
+    .classbtn button{
+        padding: 0.7rem;
+        border-radius: 0 !important;
+    }
+    .classactive{
+        background-color: #F1F5F5;
+    color: #3E5CB8;
+    }
+    .travleexplain{
+        flex-wrap: wrap;
+    }
+    .travleexplain button{
+        width: 50%;
+    }
+    .ponitstoknow{
+        width: 90%;
+        /* mar */
+        margin: auto;
+    }
+    .epoint{
+        margin-top: 1.5rem;
+    }
+    .footheader{
+        width: 80%;
+    }
+    .footerform{
+        flex-wrap: wrap;
+        margin-bottom: 2.2rem;
+    }
+    .footerform input{
+        width: 100%;
+    }
+    .footerform button{
+        border-radius: 1rem;
+        margin: auto;
+    }
+    .body{
+        padding-top: 8rem;
+    }
+    .ticketsection{
+        width: 100%;
+    }
+    .bookingsection{
+        width: 100%;
+    }
+    .ticketsection select, .tat{
+        width: 100%;
+    }
+    .tick{
+        width: 100% !important;
+    }
+    #book{
+        width: 100% !important;
+    }
+    .mddt{
+        display: none;
+    }
 }
+
+@media (min-width:451px) and (max-width:1024px) {
+    @font-face {
+        font-family: pro;
+        src: url(Sofia\ Pro\ Regular\ Az.woff);
+    }
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: pro;
+            box-sizing: border-box;
+        }
+        nav{
+            width: 100vw;
+            height: fit-content;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            display: block;
+            background-color: #fafafa;
+            font-family: sans-serif;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        .topnav,.bottomnav{
+            background-color: #F1F5F5;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0.7rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            vertical-align: middle;
+            justify-items: center;
+            align-items: center;
+    
+        }
+        .bottomnav{
+            background-color: #fafafa;
+            width: 100%;
+            display: flex;
+            position: relative;
+    
+        }
+        .togglemenu{
+            border-radius: 0.3rem;
+            width: fit-content;
+            cursor: pointer;
+            padding: 0.2rem;
+            height: fit-content;
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            vertical-align: middle;
+            justify-items: center;
+            align-items: center;
+            border: solid thin transparent;
+            transition: ease 0.5s;
+            margin-right: 0;
+        }
+        .togglemenu:hover{
+            border: solid thin black;
+    
+        }
+        .topnavclosed{
+            position: relative;
+            padding: 0.7rem 2rem;
+            width: 100%;
+            background-color: #F1F5F5;
+        }
+        .topnavclosetogg{
+            border-radius: 50%;
+            width: 1.2rem;
+            height: 1.2rem;
+            border: solid thin #3E5CB8;
+            display: flex;
+            cursor: pointer;
+            justify-content: center;
+            position: absolute;
+            left: 3.5rem;
+            align-content: center;
+            vertical-align: middle;
+            justify-items: center;
+            align-items: center;
+        }
+        .navsupport{
+            display: none;
+        }
+        .navsupport ul{
+            width:100%;
+            justify-content: center;
+            justify-items: center;
+            /* margin-bottom: 2rem; */
+        }
+        .sociallink ul{
+            display: flex;
+            
+        }
+        .navigation ul{
+            display: block !important;
+            width: 80%;
+            line-height: 2rem;
+            margin: auto;
+        }
+    
+        .navigationcontain div:nth-child(2){
+            width: 80%;
+            margin: 2rem auto;
+            margin-top: 0.5rem;
+            text-align: right;
+        }
+        @keyframes mobilenav {
+            from{
+                transform: scaleY(0);
+            }
+            to{
+                transform: scaleY(1);
+            }
+        }
+        .navigationcontain{
+            display: block;
+            position: absolute;
+            bottom: -16.1rem;
+            background-color: #F1F5F5;
+            left: 0;
+            padding: 1.5rem auto;
+            width: 100%;
+            height: fit-content;
+            box-sizing: border-box;
+            animation-name: mobilenav;
+            animation-duration: 0.5s;
+            transform-origin: top;
+        }
+        .navigationcontainclose{
+            display: none !important;
+            /* position: static; */
+        }
+        .sociallink ul li{
+            list-style: none;
+        }
+        .brandLogo{
+            font-size: 1.2rem;
+            color: black;
+            text-decoration: none;
+            font-family: sans-serif;
+            line-height: 1rem;
+        }
+        .brandLogo small{
+            font-size: x-small;
+            color: #777e90;
+        }
+    
+        ul{
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+            vertical-align: middle;
+        }
+        .contactbtn{
+            padding: 0.6rem 1.5rem;
+            border-radius: 01rem;
+            background-color: #3E5CB8;
+            outline: none;
+            border: none;
+            color: #F1F5F5;
+            transition: ease 0.5s;
+        }
+        .contactbtn:hover{
+            color: #3E5CB8;
+            background-color: #F1F5F5;
+        }
+        .navigation{
+            width: 50%;
+        }
+        /* .navlink{
+            text-decoration: none;
+            color: bisque;
+            font-size: larger;
+            font-weight: 600;
+            transition: ease 1s;
+        } */
+    
+        ul li{
+            list-style: none;
+            margin: 0 0.9rem;
+        }
+        .link a{
+            color: #777e90;
+            text-decoration: none;
+            font-size: 1rem;
+            
+        }
+        .link{
+            padding: 0.4rem 0.4rem;
+            transition: ease 0.5s;
+        }
+        .active{
+            border-bottom: solid 0.1rem #3E5CB8;
+            box-sizing: border-box;
+        }
+        .link:hover{
+            /* color: #F1F5F5; */
+            background: #F1F5F5;
+        }
+        .withIcon a{
+            display: flex;
+            justify-content: space-between;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+            vertical-align: middle;
+        }
+        .withIcon img{
+            width: 1.2rem;
+            border-radius: 0.2rem;
+            border-bottom: solid thin transparent;
+        }
+        .withIcon img:hover{
+            border-bottom: solid thin black;
+        }
+        div .travleexplain div{
+            margin-top: 0.5rem;
+        }
+        div .travleexplain div img{
+            width: 2.5rem;
+        }
+        .navlink:hover{
+            color: black;
+            text-decoration: dotted ;
+        }
+    
+    
+        .topnavclosed{
+            display: none;
+        }
+        .heroimage img{
+            height: auto;width: 100%;
+            border-radius: 0;
+        }
+        .classoftravle{
+            width: 95%;
+            padding: 1.5rem 0.5rem !important;
+        }
+        .classbtn{
+            width: 100%;
+        }
+        .classbtn button{
+            padding: 0.7rem;
+            border-radius: 0 !important;
+        }
+        .classactive{
+            background-color: #F1F5F5;
+        color: #3E5CB8;
+        }
+        .travleexplain{
+            flex-wrap: wrap;
+        }
+        .travleexplain button{
+            width: 50%;
+        }
+        .ponitstoknow{
+            width: 90%;
+            /* mar */
+            margin: auto;
+        }
+        .epoint{
+            margin-top: 1.5rem;
+        }
+        .footheader{
+            width: 80%;
+        }
+        .footerform{
+            flex-wrap: wrap;
+            margin-bottom: 2.2rem;
+        }
+        .footerform input{
+            width: 100%;
+        }
+        .footerform button{
+            border-radius: 1rem;
+            margin: auto;
+        }
+        .body{
+            padding-top: 8rem;
+        }
+        .ticketsection{
+            width: 100%;
+        }
+        .bookingsection{
+            width: 100%;
+        }
+        .ticketsection select, .tat{
+            width: 100%;
+        }
+        .tick{
+            width: 100% !important;
+        }
+        #book{
+            width: 100% !important;
+        }
+        .mddt{
+            display: none;
+        }
+    }
+    

@@ -515,3 +515,60 @@ padding-bottom: 1.5rem;
     background-color: #F1F5F5;
     padding: 3rem;
 }
+
+.sign{
+    display: flex;
+    justify-content: center !important;
+    justify-items: center !important;
+    align-items: center !important;
+    align-content: center !important;
+    vertical-align: middle !important;
+    background-color: #fafafa;
+    width: 100%;
+    height: 100vh;
+}
+.signheader{
+    text-align: center;
+}
+.signheader h5{
+    color: #777e90;
+}
+.formcontainer{
+    width: 300px;
+    border-left: solid thick #777e90;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+}
+.formcontainer form{
+    margin-top: 1.5rem;
+}
+.forminput{
+    width: 100%;
+    margin: 0.5rem;
+}
+.forminput input{
+    width: 100%;
+    height: 3rem;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    border-radius: 0.7rem;
+    border: none;
+    outline: none;
+}
+.forminput input:focus{
+    border-left: solid thin #777e90;
+    border-right: solid thin #777e90;
+}
+.formbtn{
+    display: flex;
+    justify-content: space-between;
+    vertical-align: baseline;
+    align-items: first baseline;
+    margin-top: 0.9rem;
+}
+.formfooter{
+    border-top: solid thin #777e90;
+    margin-top: 1rem;
+    padding: 1rem;
+    text-align: center;
+}

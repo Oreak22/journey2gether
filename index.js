@@ -1,4 +1,16 @@
+var fromdis =''
+var tos=0
+// 
+var tam =1
+var genrand =''
+var bookon =''
+var cot =''
+var dittav =''
+var booked =''
+var travlecosts =''
 let mobileNav=false
+
+
 sessionStorage.classt ='bis'
 const toggbtn =(conId,oId,nId, )=>{
     let butt = document.getElementById(conId)
@@ -10,7 +22,9 @@ const toggbtn =(conId,oId,nId, )=>{
         mobileNav=false
     }
 }
-
+const booknow =()=>{
+    location.href = 'Booktrip.html#book'
+}
 const testingss=()=>{
     toggbtn("mobileNav","navigationcontainclose","navigationcontain")
 }
@@ -45,6 +59,16 @@ const fvip=()=>{
     classinfo('btn3','btn2','btn1','vip','normal','buisness')
     sessionStorage.classt= 'vip'
     typetic.value= "vip"
+     if(sessionStorage.classt==='bis'){
+        travlecosts =(((fromdis+tos)*(50/100))+(fromdis+tos))* tam
+        costoftick.innerHTML= travlecosts
+    }else if(sessionStorage.classt==='vip'){
+        travlecosts =(((fromdis+tos)*(85/100))+(fromdis+tos))* tam
+        costoftick.innerHTML= travlecosts
+    }if(sessionStorage.classt==='nor'){
+        travlecosts =(fromdis+tos)* tam
+        costoftick.innerHTML= travlecosts
+    }
 
 }
 const fnormal=()=>{
@@ -52,21 +76,71 @@ const fnormal=()=>{
     sessionStorage.classt= 'nor'
     
     typetic.value= "nor"
+     if(sessionStorage.classt==='bis'){
+        travlecosts =(((fromdis+tos)*(50/100))+(fromdis+tos))* tam
+        costoftick.innerHTML= travlecosts
+    }else if(sessionStorage.classt==='vip'){
+        travlecosts =(((fromdis+tos)*(85/100))+(fromdis+tos))* tam
+        costoftick.innerHTML= travlecosts
+    }if(sessionStorage.classt==='nor'){
+        travlecosts =(fromdis+tos)* tam
+        costoftick.innerHTML= travlecosts
+    }
 }
 const fbuisness=()=>{
     classinfo('btn2','btn1','btn3','buisness','normal','vip')
     sessionStorage.classt= 'bis'
 
     typetic.value= "bis"
+     if(sessionStorage.classt==='bis'){
+        travlecosts =(((fromdis+tos)*(50/100))+(fromdis+tos))* tam
+        costoftick.innerHTML= travlecosts
+    }else if(sessionStorage.classt==='vip'){
+        travlecosts =(((fromdis+tos)*(85/100))+(fromdis+tos))* tam
+        costoftick.innerHTML= travlecosts
+    }if(sessionStorage.classt==='nor'){
+        travlecosts =(fromdis+tos)* tam
+        costoftick.innerHTML= travlecosts
+    }
 }
 const knowtype = document.getElementById('typetic')
 knowtype.addEventListener("change",()=>{
     if(typetic.value==='bis'){
         fbuisness()
+        if(sessionStorage.classt==='bis'){
+            travlecosts =(((fromdis+tos)*(50/100))+(fromdis+tos))* tam
+            costoftick.innerHTML= travlecosts
+        }else if(sessionStorage.classt==='vip'){
+            travlecosts =(((fromdis+tos)*(85/100))+(fromdis+tos))* tam
+            costoftick.innerHTML= travlecosts
+        }if(sessionStorage.classt==='nor'){
+            travlecosts =(fromdis+tos)* tam
+            costoftick.innerHTML= travlecosts
+        }
     }else if(typetic.value==='vip'){
         fvip()
+        if(sessionStorage.classt==='bis'){
+            travlecosts =(((fromdis+tos)*(50/100))+(fromdis+tos))* tam
+            costoftick.innerHTML= travlecosts
+        }else if(sessionStorage.classt==='vip'){
+            travlecosts =(((fromdis+tos)*(85/100))+(fromdis+tos))* tam
+            costoftick.innerHTML= travlecosts
+        }if(sessionStorage.classt==='nor'){
+            travlecosts =(fromdis+tos)* tam
+            costoftick.innerHTML= travlecosts
+        }
     }else if(typetic.value==='nor'){
         fnormal()
+        if(sessionStorage.classt==='bis'){
+            travlecosts =(((fromdis+tos)*(50/100))+(fromdis+tos))* tam
+            costoftick.innerHTML= travlecosts
+        }else if(sessionStorage.classt==='vip'){
+            travlecosts =(((fromdis+tos)*(85/100))+(fromdis+tos))* tam
+            costoftick.innerHTML= travlecosts
+        }if(sessionStorage.classt==='nor'){
+            travlecosts =(fromdis+tos)* tam
+            costoftick.innerHTML= travlecosts
+        }
     }
 })
 const locationdata=[
@@ -114,15 +188,6 @@ const listlocation=()=>{
 //     listlocation()
 //     listlocati2n2()
 // }
-var fromdis =''
-var tos=0
-// 
-var tam =1
-var genrand =''
-var bookon =''
-var cot =''
-var dittav =''
-var booked =''
 
 
 const selects1 = document.getElementById('fromt')
@@ -149,7 +214,16 @@ select2.addEventListener('change',()=>{
     Journeyto.innerHTML= tot.value
     tos = realdata.find((i,e)=>i.place===tot.value).distance
     distance.innerHTML=fromdis+ tos +" km"
-    costoftick.innerHTML= (fromdis+tos)* tam
+    if(sessionStorage.classt==='bis'){
+        travlecosts =(((fromdis+tos)*(50/100))+(fromdis+tos))* tam
+        costoftick.innerHTML= travlecosts
+    }else if(sessionStorage.classt==='vip'){
+        travlecosts =(((fromdis+tos)*(85/100))+(fromdis+tos))* tam
+        costoftick.innerHTML= travlecosts
+    }if(sessionStorage.classt==='nor'){
+        travlecosts =(fromdis+tos)* tam
+        costoftick.innerHTML= travlecosts
+    }
     if(fromt.value.length||tot.value.length||tickamounts.value.length
         ||travledate.value.length ==0){
             document.getElementById('buyt').setAttribute('disabled',true)
@@ -161,7 +235,16 @@ select2.addEventListener('change',()=>{
 const tdate = document.getElementById('travledate')
 tdate.addEventListener('change',()=>{
     traveltime.innerHTML=travledate.value
-    costoftick.innerHTML= (fromdis+tos)* tam
+    if(sessionStorage.classt==='bis'){
+        travlecosts =(((fromdis+tos)*(50/100))+(fromdis+tos))* tam
+        costoftick.innerHTML= travlecosts
+    }else if(sessionStorage.classt==='vip'){
+        travlecosts =(((fromdis+tos)*(85/100))+(fromdis+tos))* tam
+        costoftick.innerHTML= travlecosts
+    }if(sessionStorage.classt==='nor'){
+        travlecosts =(fromdis+tos)* tam
+        costoftick.innerHTML= travlecosts
+    }
     const genrndom = ()=>{
         return Math.random().toString(36).slice(-10)
     }
@@ -179,7 +262,16 @@ const tickamount = document.getElementById('tickamounts')
 tickamount.addEventListener('change',()=>{
     nt.innerHTML=tickamounts.value
     tam= tickamounts.value
-    costoftick.innerHTML= (fromdis+tos)* tam
+    if(sessionStorage.classt==='bis'){
+        travlecosts =(((fromdis+tos)*(50/100))+(fromdis+tos))* tam
+        costoftick.innerHTML= travlecosts
+    }else if(sessionStorage.classt==='vip'){
+        travlecosts =(((fromdis+tos)*(85/100))+(fromdis+tos))* tam
+        costoftick.innerHTML= travlecosts
+    }if(sessionStorage.classt==='nor'){
+        travlecosts =(fromdis+tos)* tam
+        costoftick.innerHTML= travlecosts
+    }
     if(fromt.value.length||tot.value.length||tickamounts.value.length
         ||travledate.value.length ==0){
             document.getElementById('buyt').setAttribute('disabled',true)
@@ -198,7 +290,7 @@ const confirmtravle=()=>{
     const bookedon=booked
     const distance=fromdis+ tos
     const nooftick=tickamounts.value
-    const costoftick=(fromdis+tos)* tam
+    const costoftick=travlecosts
     const trn=genrand
     const ticktype=typetic.value
     const newtick = {from,jto,travletime,bookedon,distance,nooftick,costoftick,trn,ticktype}
@@ -233,3 +325,6 @@ const confirmtravle=()=>{
 }
 //  history
 // filters.innerHTML='/'
+
+
+

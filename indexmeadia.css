@@ -223,8 +223,17 @@
     div .travleexplain div{
         margin-top: 0.5rem;
     }
+    .travleexplain h3{
+        font-size: 1rem;
+    }
     div .travleexplain div img{
-        width: 2.5rem;
+        width: 2rem;
+    }
+    div .travleexplain div button{
+        padding: 0.5rem !important;
+        width: 8rem !important;
+        margin-top: 0.5rem;
+        border-radius: 0.5rem;
     }
     .navlink:hover{
         color: black;
@@ -277,9 +286,12 @@
     }
     .footerform input{
         width: 100%;
+        border-radius: 2.5rem;
     }
     .footerform button{
-        border-radius: 1rem;
+        border-radius: 2.5rem;
+        border-radius: 1rem !important;
+        width: 100%;
         margin: auto;
     }
     .body{
@@ -290,12 +302,14 @@
     }
     .bookingsection{
         width: 100%;
+        padding: 2rem 0.5rem;
     }
     .ticketsection select, .tat{
         width: 100%;
     }
     .tick{
         width: 100% !important;
+        padding-bottom: 3.25rem !important;
     }
     #book{
         width: 100% !important;
@@ -584,7 +598,8 @@
         }
         .footerform input{
             width: 100%;
-        }
+        border-radius: 2.5rem;
+    }
         .footerform button{
             border-radius: 1rem;
             margin: auto;
@@ -603,6 +618,7 @@
         }
         .tick{
             width: 100% !important;
+            /* border-bottom: 4.25rem !important; */
         }
         #book{
             width: 100% !important;

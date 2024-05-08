@@ -83,7 +83,7 @@ hesy.map((i,e)=>
 
 filterss.addEventListener('change',()=>{
     // .
-    if(filterss.value==='b'){
+    if(filterss.value==='all'){
         locationdata.map((i,e)=> filterss.innerHTML +=`<option value="${i.place}">${i.place}</option>`
         )
         
